@@ -1,0 +1,10 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Контакти{% endblock %}
+
+{% block content %}
+<h1>Контакти</h1>
+<p>Зв’яжіться з нами за:</p>
+<p>елетронною поштою {{ email|default:"test@test.com" }}</p>
+<p>телефоном: {{ phone|default:"044 123 45 67" }}</p>
+{% endblock %}

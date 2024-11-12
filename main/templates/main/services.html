@@ -1,0 +1,24 @@
+{% extends "main/base.html" %}
+
+{% block title %}Послуги | My Site{% endblock %}
+
+{% block content %}
+<div class="text-center my-4">
+    <h1 class="display-5">Наші Послуги</h1>
+    <p class="lead">Ми пропонуємо широкий спектр послуг, які відповідають вашим потребам</p>
+</div>
+
+<div class="row">
+    {% for service in services %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ service.name }}</h5>
+                <p class="card-text">{{ service.description|truncatechars:100 }}</p>
+                <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

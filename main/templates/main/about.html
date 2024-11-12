@@ -1,0 +1,17 @@
+{% extends "main/base.html" %}
+
+{% block title %}Про нас | My Site{% endblock %}
+
+{% block content %}
+<div class="text-center my-4">
+    <h1 class="display-5">Про нас</h1>
+    <p class="lead">Ми прагнемо надавати найкращі рішення для наших клієнтів.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <p>{{ company_description|safe|default:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eligendi odio consequatur eveniet adipisci, ab deserunt harum, nam consequuntur repellendus expedita delectus illum. Commodi, itaque voluptas cum facilis architecto vitae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eligendi odio consequatur eveniet adipisci, ab deserunt harum, nam consequuntur repellendus expedita delectus illum. Commodi, itaque voluptas cum facilis architecto vitae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eligendi odio consequatur eveniet adipisci, ab deserunt harum, nam consequuntur repellendus expedita delectus illum. Commodi, itaque voluptas cum facilis architecto vitae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eligendi odio consequatur eveniet adipisci, ab deserunt harum, nam consequuntur repellendus expedita delectus illum. Commodi, itaque voluptas cum facilis architecto vitae." }}</p>
+    </div>
+</div>
+{% endblock %}
+
